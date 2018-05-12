@@ -1,0 +1,72 @@
+
+<link rel="stylesheet" href="/css/styleSignUp.css">
+
+{{>head}}
+
+<div class="form">
+
+  <ul class="tab-group">
+    <li class="tab active"><a href="/signup">Sign Up</a></li>
+    <li class="tab"><a href="/login">Log In</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <!-- signup -->
+    <!-- <div id="signup"> -->
+    <h1>Sign Up for Free</h1>
+
+    <form action="/signup" method="post">
+
+      <div class="top-row">
+        <div class="field-wrap">
+          <!-- <label>
+                User Name<span class="req">*</span>
+              </label> -->
+          <input type="text" id="userName" placeholder="Type username" name="name" required autocomplete="on" />
+          <i class="fas fa-exclamation-circle" id="userIcon"></i>
+
+        </div>
+      </div>
+
+      <div class="field-wrap">
+        <!-- <label>
+              Email Address<span class="req">*</span>
+            </label> -->
+        <input type="email" name="email" id="email" placeholder="Email" required autocomplete="on" />
+        <i class="fas fa-exclamation-circle" id="emailIcon"></i>
+
+      </div>
+
+      <div class="field-wrap">
+        <!-- <label>
+              Phone Number<span class="req">*</span>
+            </label> -->
+        <input type="text" name="phone" id="phone" placeholder="phone" required autocomplete="on" />
+        <i class="fas fa-exclamation-circle" id="phoneIcon"></i>
+
+      </div>
+    </div>
+
+      <div class="field-wrap">
+        <!-- <label>
+              Set A Password<span class="req">*</span>
+            </label> -->
+        <input type="password" placeholder="password" id="password" name="password" required autocomplete="off" />
+        <i class="fas fa-exclamation-circle" id="passwordIcon"></i>
+
+      </div>
+
+      <button id="formSubmit" type="submit" class="button button-block" />Get Started</button>
+
+    </form>
+
+
+    <div class="field-wrap" id="formError">
+
+    </div>
+  </div>
+
+
+</div>
+
+<!-- <script src="./js/dom.js"></script> -->

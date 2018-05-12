@@ -1,0 +1,21 @@
+<h1>this is the post page</h1>
+<h1>{{user}}: </h1>
+<h1>{{postBody}}</h1>
+<p>{{post_id}}</p>
+
+
+<form class="" action="/{{post_id}}/comment" method="post">
+
+ <textarea name="body" row='5' column='8' placeholder="Write comment!"></textarea>
+ <br>
+ <input type="submit" value="Submit">
+</form>
+<h2>Comments:</h2>
+<ul>
+  {{#each comments}}
+  <ul>{{this.name}}
+    <li>{{this.body}}</li>
+  </ul>
+  {{/each}}
+
+</ul>

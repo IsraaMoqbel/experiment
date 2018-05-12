@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/css/style.css">
+
+<section class="home">
+ <h1>This is the home page</h1>
+ <p>Welcome to my humble website</p>
+<form class="" action="/post" method="post">
+
+  <textarea name="body" row='5' column='8' placeholder="write anything!"></textarea>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+ <ul>
+ {{#each posts}}
+ <a href='/{{this.name}}'>{{this.name}}:</a>
+   <li><a href='/{{this.name}}/{{this.id}}'>{{this.body}}</a></li>
+
+ {{/each}}
+</ul>
+</section>
+<!-- <script src="./js/dom.js"></script> -->
